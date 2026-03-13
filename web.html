@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Güneşli Günlük 🌻</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=EB+Garamond:ital,wght@0,400;1,400&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+<body id="ana-ekran">
+
+    <div class="konteynir">
+        <div class="motive-levha">
+            <i class="fa-solid fa-sun"></i>
+            <p id="siir-metni">"Her gün yeni bir başlangıç, her an bir mucizedir."</p>
+        </div>
+
+        <div class="ana-govde">
+            <div class="sol-panel">
+                <h3 class="baslik">Yeni Not 🖋️</h3>
+                <div class="giris-grubu">
+                    <input type="text" id="gorev-input" placeholder="Hayalini yaz..." autofocus>
+                    <input type="date" id="tarih-input">
+                    <button id="ekle-btn">DEFTERE KAYDET</button>
+                </div>
+                <button id="ses-btn" class="asistan-btn">🔊 Sesli Rehber: Aktif</button>
+            </div>
+
+            <div class="defter-sayfasi">
+                <div class="baslik-alani">Günün Planları</div>
+                <div class="icerik">
+                    <div class="liste-kutusu">
+                        <span class="etiket">📜 Yapılacaklar</span>
+                        <ul id="aktif-liste"></ul>
+                    </div>
+                    <div class="liste-kutusu">
+                        <span class="etiket tamamlanan">🌸 Tamamlananlar</span>
+                        <ul id="tamamlanan-liste"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+:root {
+    --krem: #fdfaf1;
+    --bebe-mavi: #d1d8e0;
+    --gunes-sari: #fef5d7;
+    --murekkep: #4b4b4b;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: 'EB Garamond', serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* İç açıcı, yumuşak bir gradyan */
+    background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+    transition: background 1.2s ease;
+    padding: 20px;
+}
+
+.konteynir {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* Motivasyon Levhası */
+.motive-levha {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    border-bottom: 4px solid #ffd166;
+}
+
+.motive-levha i { color: #ffd166; font-size: 20px; margin-bottom: 5px; }
+#siir-metni { font-family: 'Dancing Script', cursive; font-size: 24px; color: #444; }
+
+.ana-govde { display: flex; gap: 30px; align-items: flex-start; }
+
+/* Sol Panel */
+.sol-panel {
+    flex: 0.8;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.baslik { font-family: 'Special Elite', cursive; color: #4b4b4b; margin-bottom: 20px; }
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    outline: none;
+    font-family: 'Special Elite', cursive;
+    background: #fff;
+}
+
+#ekle-btn {
+    width: 100%;
+    padding: 15px;
+    background: #06d6a0;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#ekle-btn:hover { background: #05b386; transform: translateY(-2px); }
+
+/* Defter Sayfası */
+.defter-sayfasi {
+    flex: 1.2;
+    background: var(--krem);
+    min-height: 550px;
+    padding: 40px;
+    border-radius: 5px 30px 30px 5px;
+    box-shadow: 10px 10px 40px rgba(0,0,0,0.1);
+    position: relative;
+    border-left: 20px solid #ef476f; /* Nostaljik cilt rengi */
+}
+
+.baslik-alani {
+    font-family: 'Dancing Script', cursive;
+    font-size: 35px;
+    color: #444;
+    border-bottom: 1px dashed #ccc;
+    margin-bottom: 20px;
+}
+
+.etiket { font-family: 'Special Elite', cursive; font-size: 13px; color: #999; display: block; margin-top: 15px; }
+
+li {
+    font-size: 22px;
+    list-style: none;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 8px 0;
+    display: flex;
+    justify-content: space-between;
+    color: #333;
+}
+
+.yapildi { color: #aaa; text-decoration: line-through; }
+
+.asistan-btn { margin-top: 20px; background: none; border: 1px solid #eee; padding: 10px; border-radius: 10px; cursor: pointer; width: 100%; font-size: 12px; }
